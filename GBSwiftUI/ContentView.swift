@@ -18,9 +18,9 @@ struct ContentView: View {
                 .resizable()
                 .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
                 .padding([.top, .bottom], 70)
-            TextField(/*@START_MENU_TOKEN@*/"Placeholder"/*@END_MENU_TOKEN@*/, text: $login)
+            TextField("Email или телефон", text: $login)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
-            SecureField("Password", text: $password)
+            SecureField("Пароль", text: $password)
                 .padding(.bottom, 10)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
             Button(action: logInButtonDidTap, label: {
