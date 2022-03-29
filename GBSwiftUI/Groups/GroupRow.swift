@@ -14,9 +14,9 @@ struct GroupRow: View {
             SettingRow(imageName: "VKLogo") {
                 VStack(alignment: .leading) {
                     Text("VK")
-                        .titleStyle
+                        .titleStyle()
                     Text("Description")
-                        .subtitleStyle
+                        .subtitleStyle()
                 }
             }
         }

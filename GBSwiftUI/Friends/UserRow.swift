@@ -18,9 +18,9 @@ struct UserRow: View {
             SettingRow(imageName: imageName) {
                 VStack(alignment: .leading) {
                     Text(userName)
-                        .titleStyle
+                        .titleStyle()
                     Text(city)
-                        .subtitleStyle
+                        .subtitleStyle()
                 }
             }
         }
@@ -76,11 +76,11 @@ struct UserCell_Previews: PreviewProvider {
 
 extension View {
 
-    var titleStyle: some View {
+    func titleStyle() -> some View {
         modifier(TitleStyleViewModifier())
     }
 
-    var subtitleStyle: some View {
+    func subtitleStyle() -> some View {
         modifier(SubtitleStyleViewModifier())
     }
 }
