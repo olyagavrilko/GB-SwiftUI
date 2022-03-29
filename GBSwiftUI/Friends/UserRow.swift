@@ -1,5 +1,5 @@
 //
-//  UserCell.swift
+//  UserRow.swift
 //  GBSwiftUI
 //
 //  Created by Olya Ganeva on 23.03.2022.
@@ -7,16 +7,20 @@
 
 import SwiftUI
 
-struct UserCell: View {
+struct UserRow: View {
+
+    let userName: String
+    let city: String
+    let imageName: String
 
     var body: some View {
         VStack {
-            SettingRow(imageName: "VKLogo") {
+            SettingRow(imageName: imageName) {
                 VStack(alignment: .leading) {
-                    Text("VK")
-                        .titleStyle
-                    Text("Description")
-                        .subtitleStyle
+                    Text(userName)
+                        .titleStyle()
+                    Text(city)
+                        .subtitleStyle()
                 }
             }
         }
@@ -62,18 +66,21 @@ struct SubtitleStyleViewModifier: ViewModifier {
 }
 
 struct UserCell_Previews: PreviewProvider {
+
+    static let someFriend = User(id: "some", name: "some", city: "some", photo: "VKLogo")
+
     static var previews: some View {
-        UserCell()
+        UserRow(userName: someFriend.name, city: someFriend.city, imageName: someFriend.photo)
     }
 }
 
 extension View {
 
-    var titleStyle: some View {
+    func titleStyle() -> some View {
         modifier(TitleStyleViewModifier())
     }
 
-    var subtitleStyle: some View {
+    func subtitleStyle() -> some View {
         modifier(SubtitleStyleViewModifier())
     }
 }

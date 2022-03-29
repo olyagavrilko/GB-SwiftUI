@@ -9,8 +9,12 @@ import SwiftUI
 
 struct LoginView: View {
 
-    @State private var login = ""
-    @State private var password = ""
+    @State private var login = "admin"
+    @State private var password = "123"
+
+    @Binding var isUserLoggedIn: Bool
+
+    @State private var showIncorrentCredentialsWarning = false
 
     var body: some View {
         VStack {
@@ -20,6 +24,7 @@ struct LoginView: View {
                 .padding([.top, .bottom], 70)
             TextField("Email или телефон", text: $login)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
+                .autocapitalization(.none)
             SecureField("Пароль", text: $password)
                 .padding(.bottom, 10)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
@@ -37,15 +42,27 @@ struct LoginView: View {
             Spacer()
         }
         .padding()
+        .alert(isPresented: $showIncorrentCredentialsWarning) {
+                Alert(
+                    title: Text("Ошибка"),
+                    message: Text("Некорректный пароль")
+                )
+            }
     }
 
     private func logInButtonDidTap() {
-        print("Hello")
+        if login == "admin" && password == "123" {
+            isUserLoggedIn = true
+        } else {
+            showIncorrentCredentialsWarning = true
+        }
+
+        password = ""
     }
 }
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        LoginView(isUserLoggedIn: .constant(false))
     }
 }
