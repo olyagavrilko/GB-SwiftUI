@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,9 +16,16 @@
 		19B68E7E27E8FBB00003DCBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19B68E7C27E8FBB00003DCBC /* LaunchScreen.storyboard */; };
 		19B68E8927E8FBB10003DCBC /* GBSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B68E8827E8FBB10003DCBC /* GBSwiftUITests.swift */; };
 		19B68E9427E8FBB10003DCBC /* GBSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B68E9327E8FBB10003DCBC /* GBSwiftUIUITests.swift */; };
-		19B68EEA27EB436B0003DCBC /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B68EE927EB436B0003DCBC /* UserCell.swift */; };
-		19B68EEF27EB437F0003DCBC /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B68EEE27EB437F0003DCBC /* GroupCell.swift */; };
+		19B68EEA27EB436B0003DCBC /* UserRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B68EE927EB436B0003DCBC /* UserRow.swift */; };
+		19B68EEF27EB437F0003DCBC /* GroupRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B68EEE27EB437F0003DCBC /* GroupRow.swift */; };
 		19B68EFA27EB574F0003DCBC /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B68EF927EB574E0003DCBC /* CircleImage.swift */; };
+		19B68F0227EC98710003DCBC /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B68F0127EC986F0003DCBC /* ContainerView.swift */; };
+		19B68F0A27EC9B520003DCBC /* FriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B68F0927EC9B520003DCBC /* FriendsView.swift */; };
+		19B68F1327ECE8560003DCBC /* FriendGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B68F1227ECE8560003DCBC /* FriendGalleryView.swift */; };
+		19B87CBA27F23F1300DA3CAE /* ASCollectionView in Frameworks */ = {isa = PBXBuildFile; productRef = 19B87CB927F23F1300DA3CAE /* ASCollectionView */; };
+		19B87CBD27F30BAE00DA3CAE /* GalleryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B87CBC27F30BAE00DA3CAE /* GalleryRow.swift */; };
+		19B87CC327F3433600DA3CAE /* GroupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B87CC227F3433600DA3CAE /* GroupsView.swift */; };
+		19B87CC627F343DB00DA3CAE /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B87CC527F343DB00DA3CAE /* NewsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +45,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		19B68F2027ECF26B0003DCBC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		19B68E6B27E8FBAD0003DCBC /* GBSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GBSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19B68E6E27E8FBAD0003DCBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,9 +74,15 @@
 		19B68E8F27E8FBB10003DCBC /* GBSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GBSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		19B68E9327E8FBB10003DCBC /* GBSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBSwiftUIUITests.swift; sourceTree = "<group>"; };
 		19B68E9527E8FBB10003DCBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		19B68EE927EB436B0003DCBC /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
-		19B68EEE27EB437F0003DCBC /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
+		19B68EE927EB436B0003DCBC /* UserRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRow.swift; sourceTree = "<group>"; };
+		19B68EEE27EB437F0003DCBC /* GroupRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupRow.swift; sourceTree = "<group>"; };
 		19B68EF927EB574E0003DCBC /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		19B68F0127EC986F0003DCBC /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		19B68F0927EC9B520003DCBC /* FriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsView.swift; sourceTree = "<group>"; };
+		19B68F1227ECE8560003DCBC /* FriendGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendGalleryView.swift; sourceTree = "<group>"; };
+		19B87CBC27F30BAE00DA3CAE /* GalleryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryRow.swift; sourceTree = "<group>"; };
+		19B87CC227F3433600DA3CAE /* GroupsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsView.swift; sourceTree = "<group>"; };
+		19B87CC527F343DB00DA3CAE /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19B87CBA27F23F1300DA3CAE /* ASCollectionView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +118,7 @@
 				19B68E8727E8FBB10003DCBC /* GBSwiftUITests */,
 				19B68E9227E8FBB10003DCBC /* GBSwiftUIUITests */,
 				19B68E6C27E8FBAD0003DCBC /* Products */,
+				3973F63EE9356C389DDB3461 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,12 +135,14 @@
 		19B68E6D27E8FBAD0003DCBC /* GBSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				19B87CC027F342E600DA3CAE /* Auth */,
+				19B87CBE27F3429C00DA3CAE /* Friends */,
+				19B87CBF27F342CA00DA3CAE /* Groups */,
+				19B87CC427F343C900DA3CAE /* News */,
+				19B87CC127F3430000DA3CAE /* Views */,
 				19B68E6E27E8FBAD0003DCBC /* AppDelegate.swift */,
 				19B68E7027E8FBAD0003DCBC /* SceneDelegate.swift */,
-				19B68E7227E8FBAD0003DCBC /* LoginView.swift */,
-				19B68EE927EB436B0003DCBC /* UserCell.swift */,
-				19B68EEE27EB437F0003DCBC /* GroupCell.swift */,
-				19B68EF927EB574E0003DCBC /* CircleImage.swift */,
+				19B68F0127EC986F0003DCBC /* ContainerView.swift */,
 				19B68E7727E8FBB00003DCBC /* Assets.xcassets */,
 				19B68E7C27E8FBB00003DCBC /* LaunchScreen.storyboard */,
 				19B68E7F27E8FBB00003DCBC /* Info.plist */,
@@ -148,6 +178,73 @@
 			path = GBSwiftUIUITests;
 			sourceTree = "<group>";
 		};
+		19B68F1127ECE80F0003DCBC /* FriendGallery */ = {
+			isa = PBXGroup;
+			children = (
+				19B87CBB27F30B7400DA3CAE /* Rows */,
+				19B68F1227ECE8560003DCBC /* FriendGalleryView.swift */,
+			);
+			path = FriendGallery;
+			sourceTree = "<group>";
+		};
+		19B87CBB27F30B7400DA3CAE /* Rows */ = {
+			isa = PBXGroup;
+			children = (
+				19B87CBC27F30BAE00DA3CAE /* GalleryRow.swift */,
+			);
+			path = Rows;
+			sourceTree = "<group>";
+		};
+		19B87CBE27F3429C00DA3CAE /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				19B68EE927EB436B0003DCBC /* UserRow.swift */,
+				19B68F0927EC9B520003DCBC /* FriendsView.swift */,
+				19B68F1127ECE80F0003DCBC /* FriendGallery */,
+			);
+			path = Friends;
+			sourceTree = "<group>";
+		};
+		19B87CBF27F342CA00DA3CAE /* Groups */ = {
+			isa = PBXGroup;
+			children = (
+				19B68EEE27EB437F0003DCBC /* GroupRow.swift */,
+				19B87CC227F3433600DA3CAE /* GroupsView.swift */,
+			);
+			path = Groups;
+			sourceTree = "<group>";
+		};
+		19B87CC027F342E600DA3CAE /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				19B68E7227E8FBAD0003DCBC /* LoginView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		19B87CC127F3430000DA3CAE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				19B68EF927EB574E0003DCBC /* CircleImage.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		19B87CC427F343C900DA3CAE /* News */ = {
+			isa = PBXGroup;
+			children = (
+				19B87CC527F343DB00DA3CAE /* NewsView.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		3973F63EE9356C389DDB3461 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -158,12 +255,16 @@
 				19B68E6727E8FBAD0003DCBC /* Sources */,
 				19B68E6827E8FBAD0003DCBC /* Frameworks */,
 				19B68E6927E8FBAD0003DCBC /* Resources */,
+				19B68F2027ECF26B0003DCBC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = GBSwiftUI;
+			packageProductDependencies = (
+				19B87CB927F23F1300DA3CAE /* ASCollectionView */,
+			);
 			productName = GBSwiftUI;
 			productReference = 19B68E6B27E8FBAD0003DCBC /* GBSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -235,6 +336,9 @@
 				Base,
 			);
 			mainGroup = 19B68E6227E8FBAD0003DCBC;
+			packageReferences = (
+				19B87CB827F23F1300DA3CAE /* XCRemoteSwiftPackageReference "ASCollectionView" */,
+			);
 			productRefGroup = 19B68E6C27E8FBAD0003DCBC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -281,10 +385,16 @@
 				19B68E6F27E8FBAD0003DCBC /* AppDelegate.swift in Sources */,
 				19B68E7127E8FBAD0003DCBC /* SceneDelegate.swift in Sources */,
 				19B68E7627E8FBAD0003DCBC /* GBSwiftUI.xcdatamodeld in Sources */,
+				19B87CBD27F30BAE00DA3CAE /* GalleryRow.swift in Sources */,
+				19B68F0A27EC9B520003DCBC /* FriendsView.swift in Sources */,
 				19B68EFA27EB574F0003DCBC /* CircleImage.swift in Sources */,
-				19B68EEF27EB437F0003DCBC /* GroupCell.swift in Sources */,
-				19B68EEA27EB436B0003DCBC /* UserCell.swift in Sources */,
+				19B87CC327F3433600DA3CAE /* GroupsView.swift in Sources */,
+				19B87CC627F343DB00DA3CAE /* NewsView.swift in Sources */,
+				19B68F0227EC98710003DCBC /* ContainerView.swift in Sources */,
+				19B68EEF27EB437F0003DCBC /* GroupRow.swift in Sources */,
+				19B68EEA27EB436B0003DCBC /* UserRow.swift in Sources */,
 				19B68E7327E8FBAD0003DCBC /* LoginView.swift in Sources */,
+				19B68F1327ECE8560003DCBC /* FriendGalleryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,6 +723,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		19B87CB827F23F1300DA3CAE /* XCRemoteSwiftPackageReference "ASCollectionView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apptekstudios/ASCollectionView";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		19B87CB927F23F1300DA3CAE /* ASCollectionView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 19B87CB827F23F1300DA3CAE /* XCRemoteSwiftPackageReference "ASCollectionView" */;
+			productName = ASCollectionView;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		19B68E7427E8FBAD0003DCBC /* GBSwiftUI.xcdatamodeld */ = {

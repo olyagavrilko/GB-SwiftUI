@@ -1,5 +1,5 @@
 //
-//  GroupCell.swift
+//  GroupRow.swift
 //  GBSwiftUI
 //
 //  Created by Olya Ganeva on 23.03.2022.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct GroupCell: View {
+struct GroupRow: View {
 
     var body: some View {
         VStack {
@@ -25,6 +25,6 @@ struct GroupCell: View {
 
 struct GroupCell_Previews: PreviewProvider {
     static var previews: some View {
-        GroupCell()
+        GroupRow()
     }
 }
