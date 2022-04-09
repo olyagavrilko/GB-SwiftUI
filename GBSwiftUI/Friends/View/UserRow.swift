@@ -11,11 +11,11 @@ struct UserRow: View {
 
     let userName: String
     let city: String
-    let imageName: String
+    let imageURL: String
 
     var body: some View {
         VStack {
-            SettingRow(imageName: imageName) {
+            SettingRow(imageURL: imageURL) {
                 VStack(alignment: .leading) {
                     Text(userName)
                         .titleStyle()
@@ -29,17 +29,20 @@ struct UserRow: View {
 
 struct SettingRow<Content: View>: View {
 
-    let imageName: String
+    let imageURL: String
     let content: Content
 
-    init(imageName: String, @ViewBuilder content: () -> Content) {
-        self.imageName = imageName
+    init(imageURL: String, @ViewBuilder content: () -> Content) {
+        self.imageURL = imageURL
         self.content = content()
     }
 
     var body: some View {
+        
+        let url = URL(string: imageURL)
+        
         HStack {
-            CircleImage(imageName: imageName)
+            CircleImage(imageURL: url!)
             content
             Spacer()
         }
@@ -65,14 +68,14 @@ struct SubtitleStyleViewModifier: ViewModifier {
     }
 }
 
-struct UserCell_Previews: PreviewProvider {
-
-    static let someFriend = User(id: "some", name: "some", city: "some", photo: "VKLogo")
-
-    static var previews: some View {
-        UserRow(userName: someFriend.name, city: someFriend.city, imageName: someFriend.photo)
-    }
-}
+//struct UserCell_Previews: PreviewProvider {
+//
+//    static let someFriend = User(id: "some", name: "some", city: "some", photo: "VKLogo")
+//
+//    static var previews: some View {
+//        UserRow(userName: someFriend.name, city: someFriend.city, imageName: someFriend.photo)
+//    }
+//}
 
 extension View {
 

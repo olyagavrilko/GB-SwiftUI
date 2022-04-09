@@ -6,13 +6,16 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct CircleImage: View {
 
-    let imageName: String
+    let imageURL: URL
 
     var body: some View {
-        Image(imageName)
+        
+        KFImage(imageURL)
+            .cancelOnDisappear(true)
             .resizable()
             .frame(width: 50, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
             .clipShape(Circle())
