@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1910564127F4781D00076249 /* FriendsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1910564027F4781D00076249 /* FriendsViewModel.swift */; };
+		1910564527F491F300076249 /* FriendGalleryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1910564427F491F300076249 /* FriendGalleryViewModel.swift */; };
+		1910564A27F4991700076249 /* PhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1910564927F4991700076249 /* PhotoService.swift */; };
+		1910564C27F4AA9600076249 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1910564B27F4AA9600076249 /* Session.swift */; };
+		1910564F27F5A05200076249 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 1910564E27F5A05200076249 /* Realm */; };
+		1910565127F5A05200076249 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1910565027F5A05200076249 /* RealmSwift */; };
+		1910565427F5A30700076249 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1910565327F5A30700076249 /* User.swift */; };
+		1910565727F5A47D00076249 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1910565627F5A47D00076249 /* Photo.swift */; };
+		1910565927F5AE2B00076249 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1910565827F5AE2B00076249 /* UserService.swift */; };
+		19A04B5A27FCCF9C00A3284C /* GroupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A04B5927FCCF9C00A3284C /* GroupService.swift */; };
+		19A04B6027FCD2F300A3284C /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A04B5F27FCD2F300A3284C /* Group.swift */; };
+		19A04B6227FCD30800A3284C /* GroupsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A04B6127FCD30800A3284C /* GroupsViewModel.swift */; };
+		19A494FC27F729C600767DBA /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 19A494FB27F729C600767DBA /* Kingfisher */; };
+		19A494FF27F7654900767DBA /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A494FE27F7654900767DBA /* RealmManager.swift */; };
 		19B68E6F27E8FBAD0003DCBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B68E6E27E8FBAD0003DCBC /* AppDelegate.swift */; };
 		19B68E7127E8FBAD0003DCBC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B68E7027E8FBAD0003DCBC /* SceneDelegate.swift */; };
 		19B68E7327E8FBAD0003DCBC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B68E7227E8FBAD0003DCBC /* LoginView.swift */; };
@@ -59,6 +73,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1910564027F4781D00076249 /* FriendsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewModel.swift; sourceTree = "<group>"; };
+		1910564427F491F300076249 /* FriendGalleryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendGalleryViewModel.swift; sourceTree = "<group>"; };
+		1910564927F4991700076249 /* PhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoService.swift; sourceTree = "<group>"; };
+		1910564B27F4AA9600076249 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		1910565327F5A30700076249 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1910565627F5A47D00076249 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		1910565827F5AE2B00076249 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		19A04B5927FCCF9C00A3284C /* GroupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupService.swift; sourceTree = "<group>"; };
+		19A04B5F27FCD2F300A3284C /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		19A04B6127FCD30800A3284C /* GroupsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewModel.swift; sourceTree = "<group>"; };
+		19A494FE27F7654900767DBA /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		19B68E6B27E8FBAD0003DCBC /* GBSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GBSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19B68E6E27E8FBAD0003DCBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19B68E7027E8FBAD0003DCBC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +115,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19A494FC27F729C600767DBA /* Kingfisher in Frameworks */,
+				1910565127F5A05200076249 /* RealmSwift in Frameworks */,
+				1910564F27F5A05200076249 /* Realm in Frameworks */,
 				19B87CBA27F23F1300DA3CAE /* ASCollectionView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -111,6 +139,109 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1910563E27F477DD00076249 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				19B68F0927EC9B520003DCBC /* FriendsView.swift */,
+				19B68EE927EB436B0003DCBC /* UserRow.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1910563F27F477E800076249 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1910564027F4781D00076249 /* FriendsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1910564227F491CA00076249 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				19B68F1227ECE8560003DCBC /* FriendGalleryView.swift */,
+				19B87CBB27F30B7400DA3CAE /* Rows */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1910564327F491D700076249 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1910564427F491F300076249 /* FriendGalleryViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1910564627F498E400076249 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				19A494FD27F7652B00767DBA /* RealmManager */,
+				1910564727F498EA00076249 /* Service */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		1910564727F498EA00076249 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1910564B27F4AA9600076249 /* Session.swift */,
+				1910565827F5AE2B00076249 /* UserService.swift */,
+				1910564927F4991700076249 /* PhotoService.swift */,
+				19A04B5927FCCF9C00A3284C /* GroupService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1910565227F5A2E600076249 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1910565327F5A30700076249 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1910565527F5A46D00076249 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1910565627F5A47D00076249 /* Photo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		19A04B5C27FCD2AF00A3284C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				19A04B5F27FCD2F300A3284C /* Group.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		19A04B5D27FCD2BC00A3284C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				19A04B6127FCD30800A3284C /* GroupsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		19A04B5E27FCD2C700A3284C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				19B87CC227F3433600DA3CAE /* GroupsView.swift */,
+				19B68EEE27EB437F0003DCBC /* GroupRow.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		19A494FD27F7652B00767DBA /* RealmManager */ = {
+			isa = PBXGroup;
+			children = (
+				19A494FE27F7654900767DBA /* RealmManager.swift */,
+			);
+			path = RealmManager;
+			sourceTree = "<group>";
+		};
 		19B68E6227E8FBAD0003DCBC = {
 			isa = PBXGroup;
 			children = (
@@ -135,8 +266,10 @@
 		19B68E6D27E8FBAD0003DCBC /* GBSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				1910564627F498E400076249 /* Core */,
 				19B87CC027F342E600DA3CAE /* Auth */,
 				19B87CBE27F3429C00DA3CAE /* Friends */,
+				19B68F1127ECE80F0003DCBC /* FriendGallery */,
 				19B87CBF27F342CA00DA3CAE /* Groups */,
 				19B87CC427F343C900DA3CAE /* News */,
 				19B87CC127F3430000DA3CAE /* Views */,
@@ -181,8 +314,9 @@
 		19B68F1127ECE80F0003DCBC /* FriendGallery */ = {
 			isa = PBXGroup;
 			children = (
-				19B87CBB27F30B7400DA3CAE /* Rows */,
-				19B68F1227ECE8560003DCBC /* FriendGalleryView.swift */,
+				1910565527F5A46D00076249 /* Models */,
+				1910564327F491D700076249 /* ViewModel */,
+				1910564227F491CA00076249 /* View */,
 			);
 			path = FriendGallery;
 			sourceTree = "<group>";
@@ -198,9 +332,9 @@
 		19B87CBE27F3429C00DA3CAE /* Friends */ = {
 			isa = PBXGroup;
 			children = (
-				19B68EE927EB436B0003DCBC /* UserRow.swift */,
-				19B68F0927EC9B520003DCBC /* FriendsView.swift */,
-				19B68F1127ECE80F0003DCBC /* FriendGallery */,
+				1910565227F5A2E600076249 /* Models */,
+				1910563F27F477E800076249 /* ViewModel */,
+				1910563E27F477DD00076249 /* View */,
 			);
 			path = Friends;
 			sourceTree = "<group>";
@@ -208,8 +342,9 @@
 		19B87CBF27F342CA00DA3CAE /* Groups */ = {
 			isa = PBXGroup;
 			children = (
-				19B68EEE27EB437F0003DCBC /* GroupRow.swift */,
-				19B87CC227F3433600DA3CAE /* GroupsView.swift */,
+				19A04B5C27FCD2AF00A3284C /* Model */,
+				19A04B5D27FCD2BC00A3284C /* ViewModel */,
+				19A04B5E27FCD2C700A3284C /* View */,
 			);
 			path = Groups;
 			sourceTree = "<group>";
@@ -264,6 +399,9 @@
 			name = GBSwiftUI;
 			packageProductDependencies = (
 				19B87CB927F23F1300DA3CAE /* ASCollectionView */,
+				1910564E27F5A05200076249 /* Realm */,
+				1910565027F5A05200076249 /* RealmSwift */,
+				19A494FB27F729C600767DBA /* Kingfisher */,
 			);
 			productName = GBSwiftUI;
 			productReference = 19B68E6B27E8FBAD0003DCBC /* GBSwiftUI.app */;
@@ -338,6 +476,8 @@
 			mainGroup = 19B68E6227E8FBAD0003DCBC;
 			packageReferences = (
 				19B87CB827F23F1300DA3CAE /* XCRemoteSwiftPackageReference "ASCollectionView" */,
+				1910564D27F5A05100076249 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				19A494FA27F729C500767DBA /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 19B68E6C27E8FBAD0003DCBC /* Products */;
 			projectDirPath = "";
@@ -383,16 +523,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				19B68E6F27E8FBAD0003DCBC /* AppDelegate.swift in Sources */,
+				1910564C27F4AA9600076249 /* Session.swift in Sources */,
 				19B68E7127E8FBAD0003DCBC /* SceneDelegate.swift in Sources */,
+				1910564127F4781D00076249 /* FriendsViewModel.swift in Sources */,
 				19B68E7627E8FBAD0003DCBC /* GBSwiftUI.xcdatamodeld in Sources */,
+				19A494FF27F7654900767DBA /* RealmManager.swift in Sources */,
 				19B87CBD27F30BAE00DA3CAE /* GalleryRow.swift in Sources */,
+				19A04B5A27FCCF9C00A3284C /* GroupService.swift in Sources */,
 				19B68F0A27EC9B520003DCBC /* FriendsView.swift in Sources */,
 				19B68EFA27EB574F0003DCBC /* CircleImage.swift in Sources */,
 				19B87CC327F3433600DA3CAE /* GroupsView.swift in Sources */,
 				19B87CC627F343DB00DA3CAE /* NewsView.swift in Sources */,
+				19A04B6227FCD30800A3284C /* GroupsViewModel.swift in Sources */,
+				1910564A27F4991700076249 /* PhotoService.swift in Sources */,
 				19B68F0227EC98710003DCBC /* ContainerView.swift in Sources */,
+				1910565727F5A47D00076249 /* Photo.swift in Sources */,
 				19B68EEF27EB437F0003DCBC /* GroupRow.swift in Sources */,
 				19B68EEA27EB436B0003DCBC /* UserRow.swift in Sources */,
+				1910565427F5A30700076249 /* User.swift in Sources */,
+				1910565927F5AE2B00076249 /* UserService.swift in Sources */,
+				19A04B6027FCD2F300A3284C /* Group.swift in Sources */,
+				1910564527F491F300076249 /* FriendGalleryViewModel.swift in Sources */,
 				19B68E7327E8FBAD0003DCBC /* LoginView.swift in Sources */,
 				19B68F1327ECE8560003DCBC /* FriendGalleryView.swift in Sources */,
 			);
@@ -725,6 +876,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		1910564D27F5A05100076249 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.24.2;
+			};
+		};
+		19A494FA27F729C500767DBA /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 		19B87CB827F23F1300DA3CAE /* XCRemoteSwiftPackageReference "ASCollectionView" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apptekstudios/ASCollectionView";
@@ -736,6 +903,21 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		1910564E27F5A05200076249 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1910564D27F5A05100076249 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		1910565027F5A05200076249 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1910564D27F5A05100076249 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		19A494FB27F729C600767DBA /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 19A494FA27F729C500767DBA /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		19B87CB927F23F1300DA3CAE /* ASCollectionView */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 19B87CB827F23F1300DA3CAE /* XCRemoteSwiftPackageReference "ASCollectionView" */;

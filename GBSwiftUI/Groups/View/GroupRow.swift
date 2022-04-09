@@ -8,14 +8,18 @@
 import SwiftUI
 
 struct GroupRow: View {
+    
+    let groupName: String
+    let description: String
+    let imageURL: String
 
     var body: some View {
         VStack {
-            SettingRow(imageName: "VKLogo") {
+            SettingRow(imageURL: imageURL) {
                 VStack(alignment: .leading) {
-                    Text("VK")
+                    Text(groupName)
                         .titleStyle()
-                    Text("Description")
+                    Text(description)
                         .subtitleStyle()
                 }
             }
@@ -23,8 +27,8 @@ struct GroupRow: View {
     }
 }
 
-struct GroupCell_Previews: PreviewProvider {
-    static var previews: some View {
-        GroupRow()
-    }
-}
+//struct GroupCell_Previews: PreviewProvider {
+//    static var previews: some View {
+//        GroupRow()
+//    }
+//}
