@@ -11,19 +11,21 @@ import SwiftUI
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    var appCoordinator: AppCoordinator?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
-        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-
-        let loginView = ContainerView().environment(\.managedObjectContext, context)
+        let navigationController = UINavigationController()
 
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = UIHostingController(rootView: loginView)
+            window.rootViewController = navigationController
+            
             self.window = window
             window.makeKeyAndVisible()
+            
+            appCoordinator = AppCoordinator(window: window, tabBarViewController: UITabBarController())
+            appCoordinator?.start()
         }
     }
 
