@@ -74,7 +74,7 @@ struct LoginView: UIViewRepresentable {
     
 //    @Binding var isUserLoggedIn: Bool
     
-    fileprivate let navigationDelegate = WebViewNavigationDelegate()
+    fileprivate let navigationDelegate = WebViewNavigationDelegate()//(viewModel: LoginViewModel())
     
     func makeUIView(context: Context) -> WKWebView {
         let webView = WKWebView()
@@ -101,6 +101,14 @@ struct LoginView: UIViewRepresentable {
             URLQueryItem(name: "response_type", value: "token"),
             URLQueryItem(name: "v", value: "5.68")
         ]
+        
+        return components.url.map { URLRequest(url: $0) }
+    }
+    
+    private func buildAuthRequestw() -> URLRequest? {
+        var components = URLComponents()
+        components.scheme = "https"
+        components.host = "yandex.ru"
         
         return components.url.map { URLRequest(url: $0) }
     }

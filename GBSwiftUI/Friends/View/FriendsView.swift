@@ -17,17 +17,19 @@ struct FriendsView: View {
     }
 
     var body: some View {
-        List(viewModel.friends) { friend in
-            NavigationLink(
-                destination: LazyView(FriendGalleryView(viewModel: FriendGalleryViewModel(photoService: PhotoService(), user: friend))),
-                label: {
-                    UserRow(userName: friend.firstName, city: friend.city?.title ?? "", imageURL: friend.photo100)
-                })
-        }
-        .listStyle(.plain)
-        .navigationTitle(Text("Друзья"))
-        .onAppear {
-            viewModel.getFriendsData()
+        NavigationView {
+            List(viewModel.friends) { friend in
+                NavigationLink(
+                    destination: LazyView(FriendGalleryView(viewModel: FriendGalleryViewModel(photoService: PhotoService(), user: friend))),
+                    label: {
+                        UserRow(userName: friend.firstName, city: friend.city?.title ?? "", imageURL: friend.photo100)
+                    })
+            }
+            .listStyle(.plain)
+            .navigationTitle(Text("Друзья"))
+            .onAppear {
+                viewModel.getFriendsData()
+            }
         }
     }
 }

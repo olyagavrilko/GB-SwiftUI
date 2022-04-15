@@ -41,6 +41,7 @@
 		19B87CC327F3433600DA3CAE /* GroupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B87CC227F3433600DA3CAE /* GroupsView.swift */; };
 		19B87CC627F343DB00DA3CAE /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B87CC527F343DB00DA3CAE /* NewsView.swift */; };
 		19BE640D280725B10099663F /* CodingStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BE640C280725B10099663F /* CodingStyle.swift */; };
+		19FBBF322809A27900F6DEF8 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FBBF312809A27900F6DEF8 /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +111,7 @@
 		19B87CC227F3433600DA3CAE /* GroupsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsView.swift; sourceTree = "<group>"; };
 		19B87CC527F343DB00DA3CAE /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		19BE640C280725B10099663F /* CodingStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingStyle.swift; sourceTree = "<group>"; };
+		19FBBF312809A27900F6DEF8 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 			children = (
 				19A494FD27F7652B00767DBA /* RealmManager */,
 				1910564727F498EA00076249 /* Service */,
+				19FBBF312809A27900F6DEF8 /* AppCoordinator.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -543,6 +546,7 @@
 			files = (
 				19B68E6F27E8FBAD0003DCBC /* AppDelegate.swift in Sources */,
 				1910564C27F4AA9600076249 /* Session.swift in Sources */,
+				19FBBF322809A27900F6DEF8 /* AppCoordinator.swift in Sources */,
 				19B68E7127E8FBAD0003DCBC /* SceneDelegate.swift in Sources */,
 				1910564127F4781D00076249 /* FriendsViewModel.swift in Sources */,
 				19B68E7627E8FBAD0003DCBC /* GBSwiftUI.xcdatamodeld in Sources */,
