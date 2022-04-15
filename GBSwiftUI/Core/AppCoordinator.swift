@@ -30,6 +30,10 @@ final class AppCoordinator {
     }
     
     public func start() {
+//        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+//        let loginView = LoginView()
+//            .environment(\.managedObjectContext, context)
+        
         if UserDefaults.standard.object(forKey: "vkToken") != nil {
             self.window.rootViewController = self.tabBarViewController
         } else {

@@ -11,24 +11,41 @@ import ASCollectionView
 struct FriendGalleryView: View {
     
     @ObservedObject var viewModel: FriendGalleryViewModel
+    
+    private let columns: [GridItem] = [
+        GridItem(GridItem.Size.flexible(minimum: 10, maximum: .infinity)),
+        GridItem(GridItem.Size.flexible(minimum: 10, maximum: .infinity))
+    ]
 
     var body: some View {
-        ASCollectionView(data: viewModel.photos) { item, _ in
-            GalleryRow(photoURL: URL(string: item.url ?? "")!)
+        ScrollView {
+            LazyVGrid(columns: columns, alignment: .center, spacing: 8) {
+                ForEach(viewModel.photos) { item in
+                    GalleryRow(photoURL: URL(string: item.url ?? "")!)
+                }
+            }
         }
-        .layout {
-            .grid(
-                layoutMode: .fixedNumberOfColumns(2),
-                itemSpacing: 3,
-                lineSpacing: 2,
-                itemSize: .absolute((UIScreen.main.bounds.width / 2) - 2)
-            )
-        }
-        .padding(0)
         .navigationTitle(Text(viewModel.title))
         .onAppear {
             viewModel.getPhotosData()
         }
+        
+//        ASCollectionView(data: viewModel.photos) { item, _ in
+//            GalleryRow(photoURL: URL(string: item.url ?? "")!)
+//        }
+//        .layout {
+//            .grid(
+//                layoutMode: .fixedNumberOfColumns(2),
+//                itemSpacing: 3,
+//                lineSpacing: 2,
+//                itemSize: .absolute((UIScreen.main.bounds.width / 2) - 2)
+//            )
+//        }
+//        .padding(0)
+//        .navigationTitle(Text(viewModel.title))
+//        .onAppear {
+//            viewModel.getPhotosData()
+//        }
     }
 }
 
